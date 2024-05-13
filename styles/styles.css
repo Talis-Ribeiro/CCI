@@ -1,0 +1,625 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: rgba(238, 232, 214, 1);
+  font-family: "Nunito", serif;
+
+
+}
+.nav-bar {
+  display: flex;
+  width: 100%;
+  height: 7rem;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(to right, #fff, #069ce9, #02547e);
+  font-family: "Playfair Display", serif;
+}
+.nav-bar ul li {
+  color: #fff;
+  padding: 15px;
+  display: inline-block;
+}
+.nav-bar a {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+  position: relative;
+}
+.nav-bar a::after {
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+.nav-bar a:hover::after {
+  width: 100%;
+}
+
+.banner-principal .photo-principal{
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.banner-principal .text-presentation h1 {
+  font-size: 6rem;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  margin-top: 5%;
+  color: #fff;
+}
+
+.banner-principal .text-presentation h3 {
+align-items: center;
+justify-content: center;
+margin-left: 22%;
+width: 100%;
+font-weight: bold;
+font-size: 2rem;
+}
+
+.text-presentation p {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 10%;
+}
+.text-presentation span {
+  text-decoration: underline;
+}
+
+.icon-whats {
+  position: fixed;
+  bottom: 20px;
+  right: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.down-set img{
+position: absolute;
+left: 50%;
+bottom: 5%;
+width: 60px;
+height: 60px;
+justify-content: center;
+animation: jump 1s linear infinite;
+cursor: pointer;
+}
+
+@keyframes jump{
+  from{transform: translateY(-15px);}
+  50%{transform: translate(0);}
+  to{transform: translateY(-15px);}
+}
+
+/* Aqui começam os efeitos para a sessão da história */
+.text-principal {
+  margin-top: 7rem;
+  width: 100%;
+  min-height: 600px;
+  height: 100%;
+  padding: 0 4rem;
+ 
+
+}
+.text-principal img {
+  width: 100%;
+  margin-top: 30px;
+  border: 0;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.history {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7%;
+  width: 100%;
+  background-color: rgba(238, 232, 214, 1);
+  justify-content: center;
+  height: 80vh;
+
+  
+}
+.our-valores{
+  font-weight: 400;
+  margin-top: 7%
+}
+.mission p, .vision p, .valores p {
+  height: 30%;
+  width: 90%;
+  font-size: 18px;
+  margin-top: 2%; 
+  font-family: "Nunito", serif;
+
+}
+
+.mission img,
+.vision img,
+.valores img {
+  margin-top: 3rem;
+  width: 2rem;
+}
+
+.text-principal h2,
+.mission h3,
+.vision h3,
+.valores h3 {
+  border-bottom: 2px solid #069ce9;
+  margin-left: 20px;
+  margin-top: 5px;
+
+}
+
+.text-principal p {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+/* aqui começam os efeitos da sessão indice */
+.indice {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to left, #fff, #069ce9, #02547e);
+  margin-top: 10%;
+  padding: 15px;
+  color: #fff;
+}
+.indice h2 {
+  padding: 2rem;
+  margin-top: 45%;
+}
+
+.indice ul {
+  padding-left: 2rem;
+  font-size: 22px;
+  font-weight: 500;
+}
+.indice video {
+  margin-top: 40%;
+  width: 50vw;
+  border: solid #fff 2px;
+}
+
+/* aqui começam os efeitos da sessão das salas */
+
+.banner-salas {
+  display: flex;
+  margin-top: 5%;
+  padding: 5%;
+
+}
+.banner-salas h2 {
+  font-size: 40px;
+  margin-left: 10%;
+  font-family: "Playfair Display", serif;
+
+}
+.banner-salas #destaque-titulo {
+  background: linear-gradient(to right, #fff, #069ce9, #02547e);
+  font-size: 65px;
+}
+.banner-salas #destaque-sala {
+  color: #069ce9;
+  font-weight: 700;
+}
+.banner-salas #destaque-negrito {
+  font-weight: 700;
+}
+.banner-salas p {
+  margin-left: 30%;
+  font-size: 20px;
+  line-height: 30px;
+}
+/* aqui começam os cards */
+/* .container-cards {
+  display: flex;
+  width: 100vw;
+  min-height: 500px;
+  background-color: #000000;
+  justify-content: space-between;
+  
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 15px;
+  overflow: hidden;
+}
+
+.card-1 img, .card-2 img, .card-3 img, .card-4 img{
+  width: 25vw; 
+  height: 40vh; 
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+
+}
+
+.card span:first-of-type {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, transparent, #ff0);
+  width: 100%;
+  height: 3px;
+  animation: animar1 2s linear infinite;
+}
+
+@keyframes animar1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.card :nth-last-of-type(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to bottom, transparent, #ff0);
+  width: 3px;
+  height: 100%;
+  animation: animar2 2s linear infinite;
+  animation-delay: 1s;
+
+}
+@keyframes animar2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.card :nth-last-of-type(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(to left, transparent, #ff0);
+  width: 100%;
+  height: 3px;
+  animation: animar3 2s linear infinite;
+}
+@keyframes animar3 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.card :last-of-type {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, transparent, #ff0);
+  width: 3px;
+  height: 100%;
+  animation: animar4 2s linear infinite;
+  animation-delay: 1s;
+
+}
+@keyframes animar4 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.card-1 img{
+ 
+} */
+ .container-cards{
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(to right, #069ce9, #02547e);
+  overflow-y: scroll;
+  }
+.cards{
+  min-width: 25%;
+  height: 60vh;
+  align-items: center;
+  margin: 1.5rem;
+  background-color: #f0f0f0;
+  box-shadow: rgba(245, 243, 243, 0.25) 0px 54px 55px, rgba(252, 249, 249, 0.12) 0px -12px 30px, rgba(224, 222, 222, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  position: relative;
+  border-radius: 10%;
+}
+
+.card-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ position: absolute;
+  background-color: #02547e;
+  width: 100%;
+  bottom: 5%;
+  color: white;
+  visibility: hidden;
+}
+.card-text h3,
+.card-text p {
+  margin: 0; /* Remove margens padrão */
+  text-align: center; /* Alinha texto ao centro */
+}
+
+.buttons-card{
+  display: flex;
+  justify-content:space-between ;
+}
+
+ .prevButton{
+  font-size: 22px;
+  background-color: #000000;
+  color: #f0f0f0;
+}
+.cards:hover .card-text {
+  visibility: visible; 
+}
+
+.card-1 img, .card-2 img, .card-3 img, .card-4 img{
+  width: 100%; 
+  height:100%;
+  object-fit: cover; 
+  border-radius: 10%;
+  transition: transform 0.3s ease;
+
+}
+
+.cards:hover img {
+  transform: scale(1.1); 
+}
+
+ .cards h2{
+  padding: 5px;
+  margin-left: 25%;
+ }
+
+ .cards p{
+  font-size:32px;
+  justify-content: center;
+  text-align: center;
+ }
+ 
+/* aqui começa a sessão de mais informações */
+
+.more-informations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-informations h2 {
+  padding: 1rem;
+  border-top: 2px solid #02547e;
+  border-bottom: 2px solid #02547e;
+  margin-top: 5%;
+}
+.more-informations ul img {
+  width: 1.5rem;
+}
+.more-informations li:hover {
+  border-bottom: solid 2px #02547e;
+}
+.more-informations ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.more-informations ul li {
+  padding: 2rem;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* aqui começa a sessão localização */
+.location-text p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.location-text {
+  margin: 0rem 2rem;
+  padding: 10px;
+  width: 70vw;
+  height: 100vh;
+}
+.location-text h2 {
+  font-size: 40px;
+  width: 80%;
+  font-weight: 500;
+  color: #069ce9;
+  padding: 5px;
+}
+.location-class {
+  display: flex;
+  width: 100vw;
+  font-weight: 500;
+  margin-top: 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-text {
+  margin-bottom: 20%;
+}
+.location-text ul {
+  margin: 5px;
+  font-size: 22px;
+}
+.location-text li {
+  padding: 10px;
+}
+
+.location-text li:hover {
+  border-bottom: 2px solid #02547e;
+}
+
+.box-maps {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 15%;
+  margin-right: 10%;
+}
+.box-maps iframe {
+  margin-top: 2rem;
+  width: 100%;
+  height: 500px;
+}
+
+/* aqui começam os estilos da sessão contact */
+.banner-contact {
+  width: 100vw;
+  height: 100vh;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 45px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top 50%;
+  width: 100%;
+  height: 100vh;
+}
+.form h2 {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 15px;
+}
+.form input {
+  width: 50%;
+  padding: 10px;
+  outline: none;
+  border: 0;
+  transition: all 0.5s;
+  font-size: 15px;
+}
+.form input:focus {
+  border-radius: 20px;
+}
+
+.form textarea {
+  width: 60%;
+  min-height: 20%;
+  margin: 5px;
+  padding: 10px;
+  outline: none;
+  border: 0;
+  font-size: 15px;
+  transition: all 0.5s;
+}
+.form textarea:focus {
+  border-radius: 20px;
+}
+
+.form label {
+  color: white;
+  padding: 5px;
+  margin-top: 10px;
+}
+.form button {
+  width: 20%;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid white;
+  margin-top: 10px;
+  color: white;
+  transition: all 1s;
+}
+
+.form button:hover {
+  background-color: white;
+  border-radius: 20px;
+  color: #1d1d2e;
+}
+
+/* aqui começam os estilos do rodapé */
+
+.footer {
+  background: #000000;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+.footer .developer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3%;
+}
+
+.footer img {
+  width: 3%;
+}
+
+.up-set {
+  position: relative; /* Alterado para "relative" para permitir que a imagem permaneça no fluxo do documento */
+}
+
+.up-set img {
+  position: absolute; /* Alterado para "fixed" para garantir que a imagem permaneça na mesma posição ao rolar */
+  right: 20px;
+  bottom: 45px;
+  animation: jump 2s linear infinite;
+  cursor: pointer;
+}
+    
+    
+/* .home-button {
+  position: relative;
+  bottom: 40px;
+  right: 10px;
+}
+
+.home-button a {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.home-button img {
+  position: absolute;
+  margin-right: 5px;
+  margin-bottom: 13%;
+} */
